@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Acadêmico | Entregas do Semestre</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a252f;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #18bc9c;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .entrega-card {
+            border-left: 5px solid #18bc9c;
+            background-color: #fdfdfd;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+        }
+        .entrega-card:hover {
+            transform: translateX(5px);
+            border-left-color: #128f76;
+        }
+        .entrega-card h3 {
+            margin-top: 0;
+            color: #1a252f;
+        }
+        .tags {
+            margin: 10px 0;
+        }
+        .tag {
+            background-color: #ecf0f1;
+            color: #7f8c8d;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #1a252f;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1a252f;
+            color: #bdc3c7;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>Meu Portfólio de Entregas</h1>
+        <p>Projetos de Engenharia e Raciocínio Computacional</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#catalogo">Catálogo de Entregas</a>
+        <a href="#sobre">Sobre Mim</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre">
+            <h2>Bem-vindo! 👋</h2>
+            <p>Este site é o repositório oficial das minhas entregas da disciplina. Ao longo do semestre, desenvolvi soluções aplicando programação em Python e Inteligência Artificial para resolver problemas práticos de diversas engenharias (Produção, Mecânica, Elétrica/Energia) e criar ferramentas reais.</p>
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo de Entregas</h2>
+
+            <div class="entrega-card">
+                <h3>1. Portal Alegrete.org: Catálogo Esportivo</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Processamento de Dados</span>
+                    <span class="tag">JSON</span>
+                </div>
+                <p><strong>Descrição:</strong> Desenvolvimento de um script automatizado e modular em Python para mapear, validar e catalogar as principais competições esportivas (como o EFIPAN) para o portal da cidade, gerando um banco de dados dinâmico.</p>
+                <a href="https://github.com/bernardobenderaluno-hue/AtividadeF/blob/main/script.py" class="btn" target="_blank">Ver Código no GitHub</a>
+            </div>
+
+            <div class="entrega-card">
+                <h3>2. Raciocínio Lógico: Listas e Vetores</h3>
+                <div class="tags">
+                    <span class="tag">Algoritmos</span>
+                    <span class="tag">Engenharia Reversa</span>
+                    <span class="tag">Engenharia de Prompts</span>
+                </div>
+                <p><strong>Descrição:</strong> Formulação e resolução manuscrita (papel e caneta) de problemas de algoritmos baseados em engenharias (Teleco, Elétrica, Mecânica), seguidas de uma avaliação crítica e geração de código utilizando duas LLMs distintas.</p>
+                <a href="https://github.com/bernardobenderaluno-hue/AtividadeF/blob/main/script2.py
+" class="btn" target="_blank">Ver Relatório (PDF)</a>
+            </div>
+
+            <div class="entrega-card">
+                <h3>3. Otimização de Rota Logística de Caminhão</h3>
+                <div class="tags">
+                    <span class="tag">Eng. de Produção</span>
+                    <span class="tag">Lógica de Programação</span>
+                </div>
+                <p><strong>Descrição:</strong> Implementação do algoritmo do "vizinho mais próximo" em Python para otimizar pontos de entrega num plano cartesiano, calculando consumo de diesel e necessidade de reabastecimento durante a rota.</p>
+                <a href="https://github.com/bernardobenderaluno-hue/AtividadeF/blob/main/script3.py" class="btn" target="_blank">Ver Código no GitHub</a>
+            </div>
+
+            <div class="entrega-card">
+                <h3>4. Análise de Tensões em Treliças Planas</h3>
+                <div class="tags">
+                    <span class="tag">Eng. Mecânica/Civil</span>
+                    <span class="tag">Matplotlib</span>
+                </div>
+                <p><strong>Descrição:</strong> Script computacional que recebe dados estruturais dinâmicos, calcula tensões normais, classifica esforços (tração/compressão), avalia o Fator de Segurança (FS) contra escoamento e plota gráficos comparativos.</p>
+                <a href="https://github.com/bernardobenderaluno-hue/AtividadeF/blob/main/script4.py" class="btn" target="_blank">Ver Código e Gráficos</a>
+            </div>
+
+            <div class="entrega-card">
+                <h3>5. Viabilidade de Sistema Solar Fotovoltaico</h3>
+                <div class="tags">
+                    <span class="tag">Eng. Elétrica</span>
+                    <span class="tag">Eng. Econômica</span>
+                    <span class="tag">Matplotlib</span>
+                </div>
+                <p><strong>Descrição:</strong> Solução completa de engenharia para dimensionamento de uma planta solar fotovoltaica. Inclui análise de consumo versus geração com base em HSP e simulação do Fluxo de Caixa Acumulado (VPL) em um horizonte de 25 anos.</p>
+                <a href="https://github.com/bernardobenderaluno-hue/AtividadeF/blob/main/script5.py" class="btn" target="_blank">Ver Código e Gráficos</a>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>Desenvolvido para avaliação acadêmica | Publicado via GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
